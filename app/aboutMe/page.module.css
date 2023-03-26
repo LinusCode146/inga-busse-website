@@ -1,0 +1,44 @@
+.container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+
+.scrollBtn {
+    text-transform: uppercase;
+    position: absolute;
+    left: 50%;
+    top: 90vh;
+    border: 3px solid #00AEAE;
+    transition: .5s ease-in-out;
+    width: 8.5rem;
+    height: 3rem;
+    text-align: center;
+    border-radius: 2rem;
+    color: #00AEAE;
+    animation: bounce 2s linear infinite;
+}
+
+.scrollBtn:hover {
+    background-color: #00AEAE;
+    color: white;
+}
+
+.qualiImg {
+    margin-top: 8rem;
+    object-fit: cover;
+    box-shadow: 4.2px 4.2px 100px #A8A8A8, -4.2px -4.2px 100px #FFFFFF;
+
+}
+
+@keyframes bounce {
+    0%   { transform: scale(1,1)      translateY(0); }
+    10%  { transform: scale(1.1,.9)   translateY(0); }
+    30%  { transform: scale(.9,1.1)   translateY(-60px); }
+    50%  { transform: scale(1.05,.95) translateY(0); }
+    57%  { transform: scale(1,1)      translateY(-7px); }
+    64%  { transform: scale(1,1)      translateY(0); }
+    100% { transform: scale(1,1)      translateY(0); }
+}

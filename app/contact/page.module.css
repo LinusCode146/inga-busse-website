@@ -1,0 +1,88 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@700&display=swap');
+
+
+
+.formContainer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.formContainer form {
+    margin-top: 18vh;
+    width: 90vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 2rem;
+    flex-direction: column;
+    min-height: 75vh;
+}
+
+.nameContainer {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 5rem;
+}
+
+.FirstNameInput {
+    width: 30vw;
+    padding: 1rem;
+
+}
+.LastNameInput {
+    width: 30vw;
+    padding: 1rem;
+
+}
+
+.EmailContainer {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    gap: 5rem;
+}
+
+.EmailInput, .phoneNumberInput {
+    width: 30vw;
+    padding: 1rem;
+}
+
+.MessageContainer {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.MessageInput {
+    width: 65vw;
+    height: 20rem;
+    resize: both;
+    padding: 1rem;
+}
+
+.MessageInput, .FirstNameInput, .LastNameInput, .EmailInput, .phoneNumberInput {
+    border: 1px solid black;
+    outline: none;
+}
+
+.buttonContainer {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.submitButton {
+    width: 10rem;
+    height: 3.2rem;
+    text-align: center;
+    border: 3px solid teal;
+    color: teal;
+    transition: .5s ease-in-out;
+    border-radius: 5rem;
+}
+.submitButton:hover {
+    background-color: teal;
+    color: white;
+}

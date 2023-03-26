@@ -1,0 +1,31 @@
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.container > h1 {
+    font-size: 2.5rem;
+    margin-top: 12vh;
+}
+
+.container > h3 {
+    font-size: 1.2rem;
+    margin-bottom: 2rem;
+}
+
+.container > a > button {
+    border: 3px solid #00AEAE;
+    color: #00AEAE;
+    width: 8rem;
+    height: 3rem;
+    transition: all .5s ease-in-out;
+    border-radius: 4rem;
+    margin-top: 4rem;
+}
+
+.container > a > button:hover {
+    background-color: teal;
+    color: white;
+}

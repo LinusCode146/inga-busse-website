@@ -1,0 +1,126 @@
+
+
+.headImg {
+    width: 7rem;
+    height: 5rem;
+    object-fit: cover;
+}
+
+.links > li {
+    list-style: none;
+    text-decoration: none;
+    color: white;
+    font-size: 1.1rem;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+.links > li:hover {
+    filter: brightness(.9);
+}
+
+.header {
+    user-select: none;
+    height: 10vh;
+    position: fixed;
+    width: 100%;
+    padding: 0 2rem;
+    background: teal;
+    display: flex;
+    align-items: center;
+    box-shadow: 0 0 4px 0 rgba(0, 0, 0, 0.08), 0 2px 4px 0 rgba(0, 0, 0, 0.12);
+    z-index: 100000;
+}
+
+.navbar {
+    width: 100%;
+    height: 7vh;
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.links {
+    display: flex;
+    gap: 2rem;
+}
+
+.toggle_btn {
+    color: silver;
+    font-size: 1.5rem;
+    cursor: pointer;
+    display: none;
+}
+
+.action_btn {
+    border: none;
+    outline: none;
+    color: white;
+    background-color: transparent;
+    height: 3rem;
+    width: 11rem;
+    border-radius: 5rem;
+    font-size: 1.2rem;
+    font-weight: bold;
+    cursor: pointer;
+    transition: scale .2s ease;
+}
+
+.action_btn:hover {
+    scale: 1.05;
+}
+
+.action_btn:active {
+    scale: .95;
+}
+
+.dropdown_menu {
+    display: none;
+    position: absolute;
+    height: 0;
+    right: 2rem;
+    top: 60px;
+    width: 300px;
+    background: rgba(255,255,255,0.1);
+    backdrop-filter: blur(15px);
+    border-radius: 10px;
+    overflow: hidden;
+    transition: height .2s cubic-bezier(.175, .885, .32, 1.275);
+}
+
+
+
+.dropdown_menu > li {
+    padding: .7rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.dropdown_menu.open {
+    height: 240px;
+}
+
+.dropdown_menu > .action_btn {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+@media (max-width: 992px) {
+    .links,
+    .action_btn{
+        display: none;
+    }
+
+    .toggle_btn {
+        display: block;
+    }
+
+    .dropdown_menu {
+        display: block;
+    }
+}

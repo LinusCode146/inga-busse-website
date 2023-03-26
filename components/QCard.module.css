@@ -1,0 +1,27 @@
+.container {
+    margin-top: 3rem;
+    border-radius: 1rem;
+    box-shadow: 4.2px 4.2px 100px #A8A8A8, -4.2px -4.2px 100px #FFFFFF;
+    width: 40vw;
+    padding: 1rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 2rem;
+    transition: .5s ease-in-out;
+}
+
+.first {
+    margin-top: 12vh;
+}
+
+.container > h2 {
+    font-size: 1.6rem;
+    font-weight: bolder;
+    text-transform: uppercase;
+}
+
+.container:hover {
+    scale: 1.1;
+}
