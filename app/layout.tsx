@@ -25,7 +25,8 @@ export default function RootLayout({
             integrity="sha512-SzlrxWUlpfuzQ+pcUCosxcglQRNAq/DZjVsC0lE40xsADsfeQoEypE+enwcOiGjk/bSuGGKHEyjSoQ1zVisanQ=="
             crossOrigin="anonymous" referrerPolicy="no-referrer"/>
       <title>Inga Busse</title>
-    </head>
+      <meta name="description" content="Inga Busse Ernährungsberatung" />
+      </head>
       <body className={`${nunito.variable}`}>
         <Header />
         {children}

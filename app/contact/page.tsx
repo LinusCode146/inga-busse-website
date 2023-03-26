@@ -4,8 +4,6 @@ import styles from './page.module.css'
 import React, { useState, useRef } from "react";
 
 
-//Todo: sent email with current content or save data in database
-
 export default function ContactForm() {
     const [message, setMessage] = useState('')
     const [firstName, setFirstName] = useState('');
@@ -15,9 +13,11 @@ export default function ContactForm() {
 
     function submitHandler(e: React.FormEvent) {
         e.preventDefault()
-
-        console.log('submitted')
-
+        setMessage("")
+        setFirstName("")
+        setLastName("")
+        setEmail("")
+        setPhoneNumber("")
     }
 
     return (
